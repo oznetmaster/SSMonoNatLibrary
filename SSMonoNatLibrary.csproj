@@ -1,0 +1,134 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E855CE1C-E3F9-489B-821D-3EF510C1A897}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSMonoNatLibrary</RootNamespace>
+    <AssemblyName>SSMonoNatLibrary</AssemblyName>
+    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92500};{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETCF;SSHARP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+    <DefineConstants>NETCF;SSHARP</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SSCoreMiniDiagnosticsLibrary, Version=1.0.0.12105, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSCoreMiniDiagnosticsLibrary\SSCoreMiniDiagnosticsLibrary\bin\Release\SSCoreMiniDiagnosticsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpCrestronExtensionsLibrary, Version=1.0.0.17666, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpCrestronExtensionsLibrary\SSharpCrestronExtensionsLibrary\bin\Release\SSharpCrestronExtensionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpThreadingLibrary, Version=1.0.0.17655, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoThreadingLibrary\SSMonoThreadPoolLibrary\bin\Release\SSharpThreadingLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoNetLibrary, Version=1.0.0.9090, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoNetLibrary\SSMonoNetLibrary\bin\Release\SSMonoNetLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoNetWebLibrary, Version=1.0.0.18267, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoNetLibrary\SSMonoNetWebLibrary\bin\Release\SSMonoNetWebLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoNetworkInformationLibrary, Version=1.0.0.18331, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoNetLibrary\SSMonoNetworkInformationLibrary\bin\Release\SSMonoNetworkInformationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoSupportLibrary, Version=1.0.0.17630, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoSupportLibrary\bin\Release\SSMonoSupportLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoThreadPoolLibrary, Version=1.0.0.17767, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoThreadingLibrary\SSMonoThreadPoolLibrary\bin\Release\SSMonoThreadPoolLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractNatDevice.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AsyncResults\AsyncResult.cs" />
+    <Compile Include="Enums\MapState.cs" />
+    <Compile Include="Enums\ProtocolType.cs" />
+    <Compile Include="EventArgs\DeviceEventArgs.cs" />
+    <Compile Include="Exceptions\MappingException.cs" />
+    <Compile Include="INatDevice.cs" />
+    <Compile Include="ISearcher.cs" />
+    <Compile Include="Mapping.cs" />
+    <Compile Include="NatUtility.cs" />
+    <Compile Include="PmpSearcher.cs" />
+    <Compile Include="Pmp\AsyncResults\PortMapAsyncResult.cs" />
+    <Compile Include="Pmp\PmpConstants.cs" />
+    <Compile Include="Pmp\PmpNatDevice.cs" />
+    <Compile Include="UpnpSearcher.cs" />
+    <Compile Include="Upnp\AsyncResults\GetAllMappingsAsyncResult.cs" />
+    <Compile Include="Upnp\AsyncResults\PortMapAsyncResult.cs" />
+    <Compile Include="Upnp\Messages\DiscoverDeviceMessage.cs" />
+    <Compile Include="Upnp\Messages\ErrorMessage.cs" />
+    <Compile Include="Upnp\Messages\GetServicesMessage.cs" />
+    <Compile Include="Upnp\Messages\Requests\CreatePortMappingMessage.cs" />
+    <Compile Include="Upnp\Messages\Requests\DeletePortMappingMessage.cs" />
+    <Compile Include="Upnp\Messages\Requests\GetExternalIPAddressMessage.cs" />
+    <Compile Include="Upnp\Messages\Requests\GetGenericPortMappingEntry.cs" />
+    <Compile Include="Upnp\Messages\Requests\GetSpecificPortMappingEntryMessage.cs" />
+    <Compile Include="Upnp\Messages\Responses\CreatePortMappingResponseMessage.cs" />
+    <Compile Include="Upnp\Messages\Responses\DeletePortMappingResponseMessage.cs" />
+    <Compile Include="Upnp\Messages\Responses\GetExternalIPAddressResponseMessage.cs" />
+    <Compile Include="Upnp\Messages\Responses\GetGenericPortMappingEntryResponseMessage.cs" />
+    <Compile Include="Upnp\Messages\UpnpMessage.cs" />
+    <Compile Include="Upnp\UpnpNatDevice.cs" />
+    <None Include="Properties\ControlSystem.cfg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rem  S# preparation will execute after these operations</PostBuildEvent>
+  </PropertyGroup>
+</Project>
